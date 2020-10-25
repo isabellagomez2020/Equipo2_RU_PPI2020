@@ -1,5 +1,5 @@
 import React from "react";
-class Sofiainfo extends React.Component {
+class Elianainfo extends React.Component {
   render() {
     return (
       <div className="container-fluid fondo">
@@ -16,11 +16,11 @@ class Sofiainfo extends React.Component {
                 <br />
                 <h4> Fehca ultimo inicio sesión</h4>
                 <br />
-                <h6>20/10/2020 </h6>
+                <h6>14/10/2020 </h6>
                 <br />
                 <h4> Telefono</h4>
                 <br />
-                <h6> 31344764 </h6>
+                <h6> 313444764 </h6>
                 <br />
                 <h4> Género</h4>
                 <br />
@@ -28,11 +28,11 @@ class Sofiainfo extends React.Component {
                 <br />
                 <h4> Direcion</h4>
                 <br />
-                <h6>Cll 93F#92A31</h6>
+                <h6>Cll 63F#52A31</h6>
                 <br />
                 <h4> Correo electronico</h4>
                 <br />
-                <h6>Sofia234@gmail.com</h6>
+                <h6>eliana334@gmail.com</h6>
                 <br />
                 <div className="col">
                   <button
@@ -40,7 +40,7 @@ class Sofiainfo extends React.Component {
                     type="button"
                     className="btn btn-outline-dark boton"
                   >
-                    <a href="/admiclientes">Salir</a>
+                    <a href="/admiusuarios">Salir</a>
                   </button>
                 </div>
                 <br />
@@ -53,4 +53,4 @@ class Sofiainfo extends React.Component {
   }
 }
 
-export default Sofiainfo;
+export default Elianainfo;

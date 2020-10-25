@@ -11,6 +11,7 @@ import Admiclientes from "../Pages/admiclientes";
 import Franinfo from "../Pages/franinfo";
 import Mariainfo from "../Pages/mariainfo";
 import Sofiainfo from "../Pages/sofiainfo";
+import Elianainfo from "../Pages/elianainfo";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <Route exact path="/franinfo" component={Franinfo} />
         <Route exact path="/mariainfo" component={Mariainfo} />
         <Route exact path="/sofiainfo" component={Sofiainfo} />
+        <Route exact path="/elianainfo" component={Elianainfo} />
       </Switch>
     </BrowserRouter>
   );
