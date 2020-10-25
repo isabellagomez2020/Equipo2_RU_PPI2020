@@ -1,5 +1,5 @@
 import React from "react";
-class Menuadmi extends React.Component {
+class Admiclientes extends React.Component {
   render() {
     return (
       <div className="container-fluid fondo">
@@ -9,23 +9,24 @@ class Menuadmi extends React.Component {
             <div className="row">
               <div className="col-lg-12 a">
                 <br />
-                <h1>Menu administrador </h1>
+                <br />
+                <a href="/sofiainfo"> Sofia Vergara Londoño </a>
+                <br />
+                <br />
+                <a href="/franinfo"> Francisco Andrés Espinosa </a>
+                <br />
+                <br />
+                <a href="/mariainfo"> Maria de la Luz Suárez </a>
+                <br />
                 <br />
 
-                <h3>Isabella te lo vende </h3>
-                <br />
-                <br />
-                <br />
-                <div className="a">
-                  <a href="/admiusuarios"> Administrar usuarios</a>
-                  <br />
-                  <a href="/admiclientes"> Administrar clientes</a>
-                </div>
-                <br />
-                <br />
                 <div className="col">
-                  <button className="btn btn-outline-dark boton">
-                    <a href="/iniciosesion">Cerrar sesión como adminustrador</a>
+                  <button
+                    onClick={this._Alerta}
+                    type="button"
+                    className="btn btn-outline-dark boton"
+                  >
+                    <a href="/menuadmi">Salir</a>
                   </button>
                 </div>
                 <br />
@@ -38,4 +39,4 @@ class Menuadmi extends React.Component {
   }
 }
 
-export default Menuadmi;
+export default Admiclientes;

@@ -6,6 +6,11 @@ import Registro from "../Pages/registro";
 import Confirmacion from "../Pages/confirmacion";
 import Informacion from "../Pages/informacion";
 import Menuadmi from "../Pages/menuadmi";
+import Admiusuarios from "../Pages/admiusuarios";
+import Admiclientes from "../Pages/admiclientes";
+import Franinfo from "../Pages/franinfo";
+import Mariainfo from "../Pages/mariainfo";
+import Sofiainfo from "../Pages/sofiainfo";
 
 const App = () => {
   return (
@@ -17,6 +22,11 @@ const App = () => {
         <Route exact path="/confirmacion" component={Confirmacion} />
         <Route exact path="/informacion" component={Informacion} />
         <Route exact path="/menuadmi" component={Menuadmi} />
+        <Route exact path="/admiusuarios" component={Admiusuarios} />
+        <Route exact path="/admiclientes" component={Admiclientes} />
+        <Route exact path="/franinfo" component={Franinfo} />
+        <Route exact path="/mariainfo" component={Mariainfo} />
+        <Route exact path="/sofiainfo" component={Sofiainfo} />
       </Switch>
     </BrowserRouter>
   );
