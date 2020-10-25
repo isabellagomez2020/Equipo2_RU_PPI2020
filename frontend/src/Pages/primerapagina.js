@@ -32,11 +32,12 @@ class PrimeraPagina extends React.Component {
                     alt="..."
                   />
                 </div>
+                <br />
               </div>
+              <br />
               <button
-                onClick={this._Alerta}
                 type="button"
-                className="btn btn-primary btn-lg boton"
+                className="btn btn-outline-dark boton boton"
               >
                 <a href="iniciosesion">Ingresar</a>
               </button>

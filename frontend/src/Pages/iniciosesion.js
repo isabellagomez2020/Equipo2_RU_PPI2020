@@ -60,6 +60,13 @@ class Iniciosesion extends React.Component {
                       </button>
                       <br />
                       <br />
+                      <button
+                        type="button"
+                        className="btn btn-outline-dark boton"
+                      >
+                        <a href="/">Salir</a>
+                      </button>
+                      <br />
                       <br />
                       <button
                         type="button"
