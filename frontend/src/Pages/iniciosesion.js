@@ -38,13 +38,13 @@ class Iniciosesion extends React.Component {
                       aria-label="Basic example"
                     >
                       <button type="button" className="btn btn-secondary boton">
-                        Administrador
+                        <a href="/menuadmi">Administrador</a>
                       </button>
                       <button type="button" className="btn btn-secondary boton">
-                        Usuario
+                        <a href="/">Usuario</a>
                       </button>
                       <button type="button" className="btn btn-secondary boton">
-                        Cliente
+                        <a href="/">Cliente</a>
                       </button>
                     </div>
                     <br />
@@ -70,7 +70,7 @@ class Iniciosesion extends React.Component {
                       <br />
                       <button
                         type="button"
-                        className="btn btn-darkcontainer-fluid fondo boton"
+                        className="btn btn-dark container-fluid fondo boton"
                       >
                         <a href="/contra">¿Olvidaste tu contraseña?</a>
                       </button>

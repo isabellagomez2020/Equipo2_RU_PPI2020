@@ -5,6 +5,7 @@ import InicioSesion from "../Pages/iniciosesion";
 import Registro from "../Pages/registro";
 import Confirmacion from "../Pages/confirmacion";
 import Informacion from "../Pages/informacion";
+import Menuadmi from "../Pages/menuadmi";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route exact path="/registro" component={Registro} />
         <Route exact path="/confirmacion" component={Confirmacion} />
         <Route exact path="/informacion" component={Informacion} />
+        <Route exact path="/menuadmi" component={Menuadmi} />
       </Switch>
     </BrowserRouter>
   );

@@ -9,13 +9,38 @@ class Informacion extends React.Component {
             <div className="row">
               <div className="col-lg-12">
                 <br />
+                <h1>!Danos tu informacion!</h1>
                 <br />
 
-                <h1>!Danos tu informacion!</h1>
+                <h1>Direccion</h1>
                 <input
                   class="form-control"
                   type="text"
-                  placeholder="Codigo "
+                  placeholder="Direcion "
+                  readonly
+                />
+                <br />
+                <h1>Telefono</h1>
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Telefono "
+                  readonly
+                />
+                <br />
+                <h1>Codigo postal</h1>
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Codogo postal "
+                  readonly
+                />
+                <br />
+                <h1>Apartamento/recidencia </h1>
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Apartamento/recidencia"
                   readonly
                 />
                 <br />
