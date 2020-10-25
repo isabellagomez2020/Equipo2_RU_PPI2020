@@ -4,6 +4,7 @@ import PrimeraPagina from "../Pages/primerapagina";
 import InicioSesion from "../Pages/iniciosesion";
 import Registro from "../Pages/registro";
 import Confirmacion from "../Pages/confirmacion";
+import Informacion from "../Pages/informacion";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route exact path="/iniciosesion" component={InicioSesion} />
         <Route exact path="/registro" component={Registro} />
         <Route exact path="/confirmacion" component={Confirmacion} />
+        <Route exact path="/informacion" component={Informacion} />
       </Switch>
     </BrowserRouter>
   );

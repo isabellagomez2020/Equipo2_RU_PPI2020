@@ -1,6 +1,5 @@
 import React from "react";
-
-class Confirmacion extends React.Component {
+class Informacion extends React.Component {
   render() {
     return (
       <div className="container-fluid fondo">
@@ -12,7 +11,7 @@ class Confirmacion extends React.Component {
                 <br />
                 <br />
 
-                <h1>Se te envio un codigo de verificacion</h1>
+                <h1>!Danos tu informacion!</h1>
                 <input
                   class="form-control"
                   type="text"
@@ -40,4 +39,4 @@ class Confirmacion extends React.Component {
   }
 }
 
-export default Confirmacion;
+export default Informacion;
