@@ -41,10 +41,10 @@ class Iniciosesion extends React.Component {
                         <a href="/menuadmi">Administrador</a>
                       </button>
                       <button type="button" className="btn btn-secondary boton">
-                        <a href="/">Usuario</a>
+                        <a href="/menusuario">Usuario</a>
                       </button>
                       <button type="button" className="btn btn-secondary boton">
-                        <a href="/">Cliente</a>
+                        <a href="/menucliente">Cliente</a>
                       </button>
                     </div>
                     <br />

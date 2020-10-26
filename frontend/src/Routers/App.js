@@ -12,6 +12,8 @@ import Franinfo from "../Pages/franinfo";
 import Mariainfo from "../Pages/mariainfo";
 import Sofiainfo from "../Pages/sofiainfo";
 import Elianainfo from "../Pages/elianainfo";
+import Menusuario from "../Pages/menususario";
+import Admiproducto from "../Pages/admiproducto";
 
 const App = () => {
   return (
@@ -29,6 +31,8 @@ const App = () => {
         <Route exact path="/mariainfo" component={Mariainfo} />
         <Route exact path="/sofiainfo" component={Sofiainfo} />
         <Route exact path="/elianainfo" component={Elianainfo} />
+        <Route exact path="/menusuario" component={Menusuario} />
+        <Route exact path="/admiproducto" component={Admiproducto} />
       </Switch>
     </BrowserRouter>
   );

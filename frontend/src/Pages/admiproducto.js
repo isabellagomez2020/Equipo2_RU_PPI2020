@@ -1,5 +1,5 @@
 import React from "react";
-class Menusuario extends React.Component {
+class Admiproducto extends React.Component {
   render() {
     return (
       <div className="container-fluid fondo">
@@ -9,23 +9,24 @@ class Menusuario extends React.Component {
             <div className="row">
               <div className="col-lg-12 a">
                 <br />
-                <h1>Menu usuario </h1>
+                <br />
+                <h1> Administra tus productos </h1>
+                <br />
+                <br />
+                <h3>Loción Paco Rabanne Maculina</h3>
+                <br />
+                <br />
+                <h5>
+                  Subido hoy a las 17:30 <br />
+                  El 20 de agosto del 2020 <br />
+                  Estado: En venta
+                </h5>
+                <br />
                 <br />
 
-                <h3>Isabella te lo vende </h3>
-                <br />
-                <br />
-                <br />
-                <div className="a">
-                  <a href="/admiproducto"> Administrar tus productos </a>
-                  <br />
-                  <a href="/admiclientes"> Añadir otro producto a la venta </a>
-                </div>
-                <br />
-                <br />
                 <div className="col">
-                  <button className="btn btn-outline-dark boton">
-                    <a href="/iniciosesion">Cerrar sesión como usuario </a>
+                  <button type="button" className="btn btn-outline-dark boton">
+                    <a href="/menusuario">Salir</a>
                   </button>
                 </div>
                 <br />
@@ -38,4 +39,4 @@ class Menusuario extends React.Component {
   }
 }
 
-export default Menusuario;
+export default Admiproducto;
