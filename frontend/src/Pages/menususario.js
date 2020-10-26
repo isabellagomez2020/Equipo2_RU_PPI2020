@@ -19,7 +19,7 @@ class Menusuario extends React.Component {
                 <div className="a">
                   <a href="/admiproducto"> Administrar tus productos </a>
                   <br />
-                  <a href="/admiclientes"> Añadir otro producto a la venta </a>
+                  <a href="/nuevoproducto"> Añadir otro producto a la venta </a>
                 </div>
                 <br />
                 <br />

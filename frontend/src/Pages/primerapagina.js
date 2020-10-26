@@ -36,6 +36,7 @@ class PrimeraPagina extends React.Component {
               </div>
               <br />
               <button
+                onClick={this._Alerta}
                 type="button"
                 className="btn btn-outline-dark boton boton"
               >
