@@ -40,7 +40,7 @@ class PrimeraPagina extends React.Component {
                 type="button"
                 className="btn btn-outline-dark boton boton"
               >
-                <a href="iniciosesion">Ingresar</a>
+                <a href="/iniciosesion">Ingresar</a>
               </button>
             </div>
           </div>

@@ -27,7 +27,7 @@ class Confirmacion extends React.Component {
                     type="button"
                     className="btn btn-outline-dark boton"
                   >
-                    <a href="/informacion">Continuar</a>
+                    <a href="/cliente">Continuar</a>
                   </button>
                 </div>
                 <br />
