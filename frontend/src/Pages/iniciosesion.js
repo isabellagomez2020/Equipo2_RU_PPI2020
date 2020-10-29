@@ -30,7 +30,7 @@ class Iniciosesion extends React.Component {
                 <div className="row">
                   <div className="col text-center">
                     <br />
-                    <h1> Inisiar sesión como:</h1>
+                    <h1> Iniciar sesión como:</h1>
 
                     <div
                       className="btn-group"
