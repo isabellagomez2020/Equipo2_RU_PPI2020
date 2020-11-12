@@ -51,7 +51,7 @@ class Informacion extends React.Component {
                     type="button"
                     className="btn btn-outline-dark boton"
                   >
-                    <a href="/cliente">Continuar</a>
+                    <a href="/confirmacion">Continuar</a>
                   </button>
                 </div>
                 <br />
