@@ -23,7 +23,7 @@ class Cliente extends React.Component {
                       type="button"
                       className="btn btn-outline-dark boton"
                     >
-                      <a href="/informacion">Rango de precio</a>
+                      <a href="/rangodeprecios">Rango de precio</a>
                     </button>
                   </div>
 
@@ -33,7 +33,7 @@ class Cliente extends React.Component {
                       type="button"
                       className="btn btn-outline-dark boton"
                     >
-                      <a href="/informacion">Categoria de productos</a>
+                      <a href="/...">Categoria de productos</a>
                     </button>
                   </div>
 
@@ -43,7 +43,7 @@ class Cliente extends React.Component {
                       type="button"
                       className="btn btn-outline-dark boton"
                     >
-                      <a href="/informacion">Realizar pedido</a>
+                      <a href="/paginapedidos">Realizar pedido</a>
                     </button>
                     <br />
                     <div className="col">
@@ -51,7 +51,7 @@ class Cliente extends React.Component {
                         type="button"
                         className="btn btn-outline-dark boton"
                       >
-                        <a href="/informacion">Cerrar sesion</a>
+                        <a href="/iniciosesion">Cerrar sesion</a>
                       </button>
                     </div>
                   </div>
