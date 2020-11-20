@@ -12,7 +12,7 @@ class Confirmacion extends React.Component {
                 <br />
                 <br />
 
-                <h1>Se te envio un codigo de verificacion</h1>
+                <h1>Se te envió un código de verificación</h1>
                 <input
                   class="form-control"
                   type="text"

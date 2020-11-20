@@ -9,10 +9,10 @@ class Informacion extends React.Component {
             <div className="row">
               <div className="col-lg-12">
                 <br />
-                <h1>!Danos tu informacion!</h1>
+                <h1>!Danos tu información!</h1>
                 <br />
 
-                <h1>Direccion</h1>
+                <h1>Dirección</h1>
                 <input
                   class="form-control"
                   type="text"
@@ -20,7 +20,7 @@ class Informacion extends React.Component {
                   readonly
                 />
                 <br />
-                <h1>Telefono</h1>
+                <h1>Teléfono</h1>
                 <input
                   class="form-control"
                   type="text"
@@ -28,7 +28,7 @@ class Informacion extends React.Component {
                   readonly
                 />
                 <br />
-                <h1>Codigo postal</h1>
+                <h1>Código postal</h1>
                 <input
                   class="form-control"
                   type="text"
