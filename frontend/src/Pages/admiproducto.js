@@ -13,7 +13,7 @@ class Admiproducto extends React.Component {
                 <h1> Administra tus productos </h1>
                 <br />
                 <br />
-                <h3>Loción Paco Rabanne Maculina</h3>
+                <h3>Loción Paco Rabanne Masculina</h3>
                 <br />
                 <br />
                 <h5>

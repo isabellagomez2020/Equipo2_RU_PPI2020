@@ -47,7 +47,7 @@ class Nuevoproducto extends React.Component {
                     type="button"
                     className="btn btn-outline-dark boton"
                   >
-                    <a href="/menusuario">Añadir producto a la veta </a>
+                    <a href="/menusuario">Añadir producto a la venta </a>
                   </button>
                   <br />
                   <br />
