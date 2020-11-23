@@ -40,10 +40,11 @@ router.get('/Cliente',(req,res)=>{
     
     //crear un cliente
     router.post('/nuevo-cliente', (req, res) => {
-        const { cliente } = req.body;//1 Captura
-        let clienteArreglo = [cliente];// Arreglo json
+        const { nombre, apellido, FechaDeNacimiento, correoElectronico, DireccionResidencia, TelefonoFijo, TelefonoCelular } = req.body;//1 Captura
+        const { cedula } = req.params;
+        let clienteArreglo = [nombre, apellido, FechaDeNacimiento, correoElectronico, DireccionResidencia, TelefonoFijo, TelefonoCelular, cedula];// Arreglo json
         //Definir el scrip sql en una variable
-        let nuevoCliente = 'INSERT INTO Cliente(modulo,mod) value(?,?)';
+        let nuevoCliente = 'INSERT INTO Cliente(nombre, apellido, FechaDeNacimiento, correoElectronico, DireccionResidencia, TelefonoFijo, TelefonoCelular, cedula) value(?,?,?,?,?,?,?,?)';
         mysqlConnection.query(nuevoCliente, clienteArreglo, (err, results, fields) => {
             //Si hay error
             if (!err) {
