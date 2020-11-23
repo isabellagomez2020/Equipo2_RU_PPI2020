@@ -16,8 +16,7 @@ router.get('/Productos',(req,res)=>{
 router.put('/Productos/', (req, res) => {
     const { nombre, nombreproveedor, telefonoproveedor, preciocompra, precioventa } = req.body;
     const { codigo } = req.params;
-    mysqlConnection.query(`UPDATE Producto SET codigo=?,nombreproveedor=?,telefonoproveedor=?,preciocompra=?,
-        precioventa=? WHERE codigo=?`,
+    mysqlConnection.query(`UPDATE Producto SET codigo=?, nombre=?, nombreproveedor=?, telefonoproveedor=?, preciocompra=?, precioventa=? WHERE codigo=?`,
         [ nombreproveedor, nombre, telefonoproveedor, preciocompra, precioventa, codigo], (err, rows, fields) => {
             if (!err) {
 
