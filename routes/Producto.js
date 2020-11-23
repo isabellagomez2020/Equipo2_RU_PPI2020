@@ -17,7 +17,7 @@ router.put('/Productos/', (req, res) => {
     const { nombre, nombreproveedor, telefonoproveedor, preciocompra, precioventa } = req.body;
     const { codigo } = req.params;
     mysqlConnection.query(`UPDATE Producto SET codigo=?,nombreproveedor=?,telefonoproveedor=?,preciocompra=?,
-        precioventa=?,, WHERE codigo=?`,
+        precioventa=? WHERE codigo=?`,
         [ nombreproveedor, nombre, telefonoproveedor, preciocompra, precioventa, codigo], (err, rows, fields) => {
             if (!err) {
 
@@ -44,7 +44,7 @@ router.post('/nuevo-producto', (req, res) => {
     const { producto, productoprefijo } = req.body;//1 Captura
     let productoArreglo = [producto, productoprefijo];// Arreglo json
     //Definir el scrip sql en una variable
-    let nuevoProducto = 'SELECT * FROM Producto(modulo,mod) value(?,?)';
+    let nuevoProducto = 'INSERT INTO Producto(modulo,mod) value(?,?)';
     mysqlConnection.query(nuevoProducto, productoArreglo, (err, results, fields) => {
         //Si hay error
         if (!err) {
@@ -52,10 +52,22 @@ router.post('/nuevo-producto', (req, res) => {
             return console.error(err.message);
         } else {//Si no
             //Falso
-            res.json({ message: 'usuario creado' });
+            res.json({ message: 'Producto creado' });
         }//Fin Si
     })
 })//Fin guardar user
+
+//Elimar un producto((aún indeciso))
+router.delete('/borrar-producto',(req,res) =>{
+    const{codigo} = req.params;
+    mysqlConnection.query('DELETE FROM Producto WHERE codigo=?', [codigo],(err,rows,fields)=>{
+        if(!err){
+            res.json(rows[0])
+        }else{
+            console.log(err);
+        }
+    })
+})
 });
 
 module.exports =router;
