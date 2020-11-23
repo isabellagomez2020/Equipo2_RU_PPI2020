@@ -27,7 +27,7 @@ router.put('/Productos/', (req, res) => {
         })//fin
 
         //buscar
-router.get('/Productos/:codigo',(req,res)=>{
+router.get('/Productos/codigo',(req,res)=>{
     const {codigo} = req.params; //codigo del producto
     mysqlConnection.query('SELECT * FROM Producto WHERE codigo =?', [codigo],(err,rows,fields)=>{
         if(!err){
@@ -40,10 +40,11 @@ router.get('/Productos/:codigo',(req,res)=>{
 
 //crear un producto
 router.post('/nuevo-producto', (req, res) => {
-    const { producto, productoprefijo } = req.body;//1 Captura
-    let productoArreglo = [producto, productoprefijo];// Arreglo json
+    const { nombre, nombreproveedor, telefonoproveedor, preciocompra, precioventa } = req.body;
+    const { codigo } = req.params;
+    let productoArreglo = [nombre, nombreproveedor, telefonoproveedor, preciocompra, precioventa, codigo];// Arreglo json
     //Definir el scrip sql en una variable
-    let nuevoProducto = 'INSERT INTO Producto(modulo,mod) value(?,?)';
+    let nuevoProducto = 'INSERT INTO Producto (nombre, nombreproveedor, telefonoproveedor, preciocompra, precioventa, codigo) value(?,?,?,?,?,?)';
     mysqlConnection.query(nuevoProducto, productoArreglo, (err, results, fields) => {
         //Si hay error
         if (!err) {
