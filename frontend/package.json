@@ -1,0 +1,16 @@
+{
+  "name": "p6qkh",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "frontend/src/index.js",
+  "dependencies": {
+    "bootstrap": "4.5.3",
+    "react": "17.0.1",
+    "react-bootstrap-sweetalert": "5.2.0",
+    "react-dom": "17.0.1",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "3.4.4",
+    "sweetalert2": "10.8.1"
+  }
+}
